@@ -4,13 +4,13 @@ import streamlit as st
 import time
 
 vn.api_key = st.secrets['vanna_api_key']
-vn.set_org('demo-sales')
+vn.use_datasets(['demo-tpc-h'])
 
 # st.sidebar.title('Organization')
 
 st.set_page_config(layout="wide")
 
-st.image('https://ask.vanna.ai/static/img/vanna_with_text_transparent.png', width=300)
+st.image('https://img.vanna.ai/vanna-streamlit.svg', width=300)
 st.write('[Vanna.AI](https://vanna.ai) is a natural language interface to data. Ask questions in natural language and get answers in seconds.')
 
 
